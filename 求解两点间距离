@@ -1,0 +1,28 @@
+
+ 
+#include <iostream>
+#include <cmath>
+
+double calculateLength(double x1, double y1, double x2, double y2) {
+    double dx = x2 - x1;  // 计算 x 坐标的差值
+    double dy = y2 - y1;  // 计算 y 坐标的差值
+    double length = sqrt(dx * dx + dy * dy);  // 根据勾股定理计算线段长度
+    return round(length * 1000.0) / 1000.0;  // 保留到小数点后 3 位
+}
+
+int main() {
+    double x1, y1, x2, y2;
+    std::cout << "请输入第一个点的 x 坐标: ";
+    std::cin >> x1;
+    std::cout << "请输入第一个点的 y 坐标: ";
+    std::cin >> y1;
+    std::cout << "请输入第二个点的 x 坐标: ";
+    std::cin >> x2;
+    std::cout << "请输入第二个点的 y 坐标: ";
+    std::cin >> y2;
+
+    double length = calculateLength(x1, y1, x2, y2);
+    std::cout << "线段的长度为: " << length << std::endl;
+
+    return 0;
+}
