@@ -1,0 +1,14 @@
+#include"iostream"
+using namespace std;
+#define height 180.5
+#define weight 56
+int main()
+{
+    system("chip 65001");
+    cout << "我是周杰伦" << endl;
+    cout << "今年" << age <<"岁"<< endl;
+    cout << "身高" << height <<"cm" << endl;
+    cout << "体重" << weight <<"kg" <<endl;
+    return 0;
+}
+//输出为：我是周杰伦，今年21岁，体重，身高
