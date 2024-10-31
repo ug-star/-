@@ -12,3 +12,21 @@ int main()
     return 0;
 }
 //输出为：我是周杰伦，今年21岁，体重，身高
+
+变量的改变，计算顺序：先计算等式右边的值，再将值赋给等式左边
+#include"iostream"
+#include"windows.h"
+using namespace std;
+int main()
+{
+	SetConsoleOutputCP(CP_UTF8);
+	int bmi;//声明
+	bmi = 30;
+	cout << "小明现在的BMI是：" <<bmi<< endl;
+	bmi = 26;
+	cout << "经过一个月的减肥，小明现在的BMI是：" <<bmi<< endl;
+	bmi = bmi - 2;//+,-,*,/
+	cout << "又经过一个月的减肥，小明的bmi减少了两点，小明现在的bmi是：" << bmi << endl;
+	return 0;
+}
+24
