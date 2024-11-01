@@ -30,3 +30,28 @@ int main()
 	return 0;
 }
 24
+
+
+sizeof函数
+#include"iostream"
+#include"windows.h"
+using namespace std;
+int main() {
+    SetConsoleOutputCP(CP_UTF8);
+    //short,int,long,longlong
+    short age=21;
+    cout<<age<<endl;
+    int num1=10;
+    long num2=20;
+    long long num3=30;
+    cout<<num1<<num2<<num3<<endl;
+    //sizeof()函数，用法：函数sizeof(数据），会告知占用字节
+    cout<<"short变量，占用字节："<<sizeof(age)<<endl;
+    cout<<"long变量，占用字节："<<sizeof(num2)<<endl;
+    cout<<"int变量，占用字节："<<sizeof(num1)<<endl;
+    cout<<"long long变量，占用字节："<<sizeof(num3)<<endl;
+
+    return 0;
+
+}
+
