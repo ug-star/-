@@ -55,3 +55,33 @@ int main() {
 
 }
 
+//有符号：signed（可选），无符号：unsigned(必须)
+   //无符号的数字，必须大于等于0
+   //无符号int long 有快捷写法
+  // u_long相当于unsigned long
+
+
+
+
+#include"iostream"
+#include"windows.h"
+using namespace std;
+int main() {
+   SetConsoleOutputCP(CP_UTF8);
+   //float单精度浮点数，四字节，6-7位的有效数字
+   float num1=1234567890;//只提供了七位的准确输出
+   float num2=1.234567890;
+   cout<<fixed;//设置为小数显示
+   cout.width(20);
+   cout<<num1<<endl;
+   cout<<num2<<","<<sizeof(num2)<<endl;
+   double num3=1234567890.1234567890;
+   cout<<num3<<","<<sizeof(num3)<<endl;
+   long double num4=1234567890.1234567890;
+   cout<<num4<<","<<sizeof(num4)<<endl;
+
+   //double双精度浮点数
+   //long double长精度（多精度）浮点数
+   return 0;
+}
+
