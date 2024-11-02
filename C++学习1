@@ -147,3 +147,20 @@ int main() {
     return 0;
 
 }
+
+
+
+布尔
+#include"iostream"
+
+using namespace std;
+
+int main() {
+//布尔：bool  字面量仅有两个：ture或false
+   bool flag=true;//本质1
+   bool flag2=false;//本质0
+   cout<<flag<<endl;
+   cout<<flag2<<endl;
+
+   return 0;
+}
