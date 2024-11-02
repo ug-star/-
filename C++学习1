@@ -125,3 +125,25 @@ int main() {
    cout<<s1<<endl;
    cout<<s2<<endl;
    cout<<s3<<endl;
+return 0;
+}
+
+
+
+#include"iostream"
+#include <string>
+
+using namespace std;
+
+int main() {
+
+    string name = "小黑";
+    string major = "物理";
+    int age = 21;
+    double height = 172.50;
+    string msg = "我叫做：" + name + ".我的专业是：" + major + ".年龄是：" + to_string(age) + ".身高是：" + to_string(height) + ".";
+    cout << msg << endl;  //to_string()是将非字符串型数据转化为字符串型数据，“+”只能用于字符串类型数据之间
+
+    return 0;
+
+}
