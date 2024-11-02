@@ -164,3 +164,22 @@ int main() {
 
    return 0;
 }
+
+
+
+
+#include"iostream"
+using namespace std;
+
+int main() {
+   //单目操作符(只有一个操作数)：+，—
+   //双目操作符(有两个操作数)：+-*/%
+  //单目操作符：++（+1），--(-1)
+    int a=2;
+    int b=++a;//前置递增（+1），在赋值语句之前，先执行+1的操作
+    cout<<"a="<<a<<",b="<<b<<endl;
+
+    int c=2;
+    int d=c++;//后置递增，在赋值语句之后，再执行加一的操作
+    cout<<"c="<<c<<",d="<<d<<endl;
+    //减法同上
