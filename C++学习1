@@ -105,3 +105,23 @@ int main() {
 	return 0;
 }
 
+
+
+
+
+#include"iostream"
+using namespace std;
+int main() {
+   //C语言风格类型的字符串
+   char s1[]="itheima";//字符数组类型
+   char *s2="itcast";//指针形式的字符串
+   //C++语言风格的字符串
+   string s3="C++ string";//c++string类型字符串
+
+ //  s1="666"; 注意：字符数组类型的变量不可通过赋值来改变，这里注释掉
+   s2="777";
+   s3="888";
+
+   cout<<s1<<endl;
+   cout<<s2<<endl;
+   cout<<s3<<endl;
