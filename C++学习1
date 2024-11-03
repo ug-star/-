@@ -257,3 +257,40 @@ if(love) {
     }
    return 0;
 }
+
+
+
+
+#include"iostream"
+using namespace std;
+
+int main() {
+/*
+ *if()
+ *{}
+ *else if()
+ *{}
+ *else if()
+ *{}
+ *..
+ *..
+ *else
+ *{}
+ */
+ bool xiaomei=true;
+    bool xiaotian=false;
+    if (xiaomei) {
+        cout<<"小美我也喜欢你"<<endl;
+
+    }
+    else if(xiaotian) {
+        cout<<"小田我也喜欢你"<<endl;
+    }
+    else {
+        cout<<"小新我也喜欢你"<<endl;
+    }
+
+
+   return 0;
+}
+该处输出小美..../通过更改bool...来改变输出的值
