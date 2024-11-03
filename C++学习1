@@ -183,3 +183,21 @@ int main() {
     int d=c++;//后置递增，在赋值语句之后，再执行加一的操作
     cout<<"c="<<c<<",d="<<d<<endl;
     //减法同上
+
+
+
+三元运算符
+#include"iostream"
+using namespace std;
+
+int main() {
+  //表达式？v1:v2;        表达式为真，输入v1的值
+    int num1,num2;
+    cout<<"请输入num1的值："<<endl;
+    cin>>num1;
+    cout<<"请输入num2的值："<<endl;
+    cin>>num2;
+    string value=num1>num2?"num1是大于num2":"num1是小于num2";
+    cout<<value<<endl;99
+   return 0;
+}
